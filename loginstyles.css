@@ -244,3 +244,41 @@
 }
 
 
+/* Language New */
+.footer-content .language{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    color: #195FAA;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #dee0e1;
+    font-size: 13px;
+}
+
+.footer-content .language a{
+    margin-right: 5px;
+}
+
+.footer-content .language a:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+
+/* Last Footer */
+.footer-content .main-footer{
+background-color: #f1f2f2;
+text-align: center;
+border-top-style: solid;
+border-width: 1px;
+border-color: #dee0e1;
+padding-top: 16px;
+padding-bottom: 16px;
+color: #7A6466;
+font-size: 13px;
+}
+
+.footer-content .main-footer a:hover{
+text-decoration: underline;
+cursor: pointer;
+}
