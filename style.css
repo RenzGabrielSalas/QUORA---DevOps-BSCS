@@ -136,3 +136,7 @@ nav{
 .post-button:hover {
     background-color: rgb(238, 238, 238);
 }
+
+.follow-item:hover {
+    background-color:  rgb(238, 238, 238);
+}
