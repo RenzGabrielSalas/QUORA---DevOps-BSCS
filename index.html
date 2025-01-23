@@ -48,29 +48,25 @@
         <div class="form-right-content">
           <span>Login</span>
           <div>
-            <div class="email">
-              <label for="name">Email</label>
-              <div>
-                <input type="text" id="name" placeholder="Your email" />
+              <div class="email">
+                  <label for="email">Email</label>
+                  <div>
+                      <input type="text" id="email" placeholder="Your email" required />
+                  </div>
               </div>
-            </div>
-            <div class="password">
-              <label for="password">Password</label>
-              <div>
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="Your password"
-                />
+              <div class="password">
+                  <label for="password">Password</label>
+                  <div>
+                      <input type="password" id="password" placeholder="Your password" required />
+                  </div>
               </div>
-            </div>
           </div>
           <div class="login">
-              <a>Forgot password?</a>
-              <input type="button" value="Login">
+              <a href="#">Forgot password?</a>
+              <input type="button" value="Login" onclick="login()">
           </div>
-        </div>
       </div>
+  </div>
 <!-- Footer -->
 <div class="footer-content">
     <!-- Language New -->
@@ -105,5 +101,22 @@
             </div>
     </div>
 </div>
+
+<!-- Static LogIn -->
+<script>
+  function login() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      // Check against the static credentials
+      if (email === "quora@gmail.com" && password === "quora123") {
+          // Redirect to 'homepage.html'
+          window.location.href = 'home.html';
+      } else {
+          // Show an alert for invalid credentials
+          alert("Invalid email or password. Please try again.");
+      }
+  }
+</script>
 </body>
 </html>
