@@ -4,6 +4,14 @@
     border-width: 1px;
 }
 
+nav{
+    margin-left: 200px;
+}
+
+.content{
+    margin-left: 210px;
+}
+
 .text-gray-dark {
     color: rgb(117, 115, 115);
 }
@@ -35,6 +43,13 @@
     padding-right: 7px;
 }
 
+.search{
+    width: 89%;
+}
+
+.col1{
+    width: 20%;
+}
 .profile {
     width: 45px;
     height: 45px;
