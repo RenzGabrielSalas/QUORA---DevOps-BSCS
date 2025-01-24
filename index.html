@@ -105,19 +105,36 @@
 
 <!-- Static LogIn -->
 <script>
-  function login() {
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-
-      // Check against the static credentials
-      if (email === "quora@gmail.com" && password === "quora123") {
-          // Redirect to 'homepage.html'
-          window.location.href = 'home.html';
-      } else {
-          // Show an alert for invalid credentials
-          alert("Invalid email or password. Please try again.");
-      }
-  }
+    function login() {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+  
+        // Check against the static credentials
+        if (email === "quora@gmail.com" && password === "quora123") {
+            // Redirect to 'homepage.html'
+            window.location.href = 'home.html';
+        } else {
+            // Show an alert for invalid credentials
+            alert("Invalid email or password. Please try again.");
+        }
+    }
+  
+    // Add event listener for "Enter" key
+    document.addEventListener("DOMContentLoaded", () => {
+        const emailInput = document.getElementById("email");
+        const passwordInput = document.getElementById("password");
+  
+        // Function to handle the keypress
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                login();
+            }
+        }
+  
+        // Add event listeners for both input fields
+        emailInput.addEventListener("keypress", handleKeyPress);
+        passwordInput.addEventListener("keypress", handleKeyPress);
+    });
 </script>
 </body>
 </html>
